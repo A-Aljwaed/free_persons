@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Include the header content -->
+    <th:block th:replace="includes/header :: header"></th:block>
+</head>
+<body>
+<!-- Include the navbar content -->
+<th:block th:replace="includes/navbar :: navbar"></th:block>
+
+<h1 th:text=" 'home'+ ${name}">مرحباً بكم في سوريا الحرة </h1>
+<a href="/person">عرض البيانات</a>
+
+<!-- Include the footer content -->
+<th:block th:replace="includes/footer :: footer"></th:block>
+</body>
+</html>
